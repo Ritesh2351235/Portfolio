@@ -1,25 +1,74 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-categories: [ Jekyll ]
+title:  "Shortest Path Property Exploration"
+categories: [ Searching Graph  ]
 image: assets/images/demo1.jpg
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+## Shortest Property Exploration Path
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+A real estate agent needs to plan a route for a customer who wants to visit multiple properties in a city. The goal is to find the shortest path that allows the customer to visit all desired properties efficiently. This means the agent should find a route that minimizes travel time and distance. By doing this, the agent can save time and reduce travel costs, making the property viewing experience smooth and enjoyable for the customer. A well-planned route ensures that the customer can see all the properties they are interested in without unnecessary delays and save a lot of their time.
 
-Jekyll also offers powerful support for code snippets:
+### Using the A* Search Algorithm
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+The A* search algorithm is perfect for quickly finding the shortest path in a weighted graph. Think of the city and its properties as points (nodes) on a map, with the roads between them as lines (edges) connecting these points. Using the A* algorithm, we can efficiently figure out the best route through this map to visit all the desired properties
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+### Steps for Implementation
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+1. **Create a Graph**: Lets Represent the city and properties as a graph where nodes represent properties and edges represent the roads connecting them with weights denoting the travel distance or time.
+
+2. **Defining Heuristic Function**: Define a heuristic function that estimates the remaining distance to the final destination. Lets consider, the straight-line distance  between two nodes can be used for this case.
+
+3. **Priority Queue**: Lets use a priority queue to prioritize nodes based on the total estimated cost (actual distance traveled + heuristic estimate).
+
+4. **A* Search Algorithm**: Implementing the A* search algorithm to explore nodes, calculate the total cost, and find the shortest path.
+    - Start at the initial node (starting property).
+    - Expand nodes by moving to adjacent nodes (properties) based on the lowest total cost.
+    - Continue until the destination node (final property) is reached.
+
+5. **Keep Track of Visited Nodes**: Lets Maintain a list of visited nodes to avoid revisiting and ensure the algorithm terminates early and efficiently.
+
+6. **Return the Optimal Path**: Once the destination node is reached, return the path and total travel distance.
+
+## A* Search Algorithm
+```cpp
+function reconstruct_path(cameFrom, current)
+    total_path := [current]
+    while current in cameFrom.Keys:
+        current := cameFrom[current]
+        total_path.prepend(current)
+    return total_path
+
+function A_Star(start, goal, h)
+    openSet := {start}               // The set of discovered nodes that may need to be expanded
+    cameFrom := {}                   // Map to store the previous node on the optimal path
+    gScore := {}                     // Cost from start along the best known path
+    fScore := {}                     // Estimated total cost from start to goal through node
+
+    gScore[start] := 0               // Initial cost from start
+    fScore[start] := h(start)        // Estimated total cost from start to goal
+
+    while openSet is not empty:
+        current := node in openSet with the lowest fScore[current]
+
+        if current == goal:
+            return reconstruct_path(cameFrom, current)
+
+        openSet.remove(current)
+
+        for each neighbor of current:
+            tentative_gScore := gScore[current] + d(current, neighbor)   // Distance from start to neighbor
+
+            if neighbor not in gScore or tentative_gScore < gScore[neighbor]:
+                cameFrom[neighbor] := current
+                gScore[neighbor] := tentative_gScore
+                fScore[neighbor] := gScore[neighbor] + h(neighbor)
+
+                if neighbor not in openSet:
+                    openSet.add(neighbor)
+
+    return failure  // Open set is empty and goal was never reached
+```
+## Here is the full code implementation
+
+
+
