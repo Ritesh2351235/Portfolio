@@ -3,7 +3,7 @@ layout: post
 title:  "Zestimate"
 author: jane
 categories: [ ]
-image: assets/images/home.jpg
+image: assets/images/Zestimate.jpg
 tags: []
 ---
 
@@ -15,6 +15,8 @@ Zestimate (Zillow's estimate) is a calculated value that represents an estimated
 - **User Data**: Inputs from homeowners and real estate agents.
 - **Recent Sales**: Prices of similar properties that have been sold recently.
 - **Market Trends**: Current real estate market conditions and trends.
+
+### For more information on how the property valuation is done visit [Zillow](https://www.zillow.com/z/zestimate/)
 
 Zillow uses algorithms and machine learning models to process this data and produce an estimate of what a property might be worth if it were to be sold in the current market. The Zestimate is meant to give homeowners, buyers, and real estate professionals a starting point for evaluating property prices, though it is not an official appraisal.
 

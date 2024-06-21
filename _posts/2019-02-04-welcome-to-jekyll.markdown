@@ -2,7 +2,7 @@
 layout: post
 title:  "Shortest Path Property Exploration"
 categories: [ Searching Graph  ]
-image: assets/images/demo1.jpg
+image: assets/images/Asearch.jpg
 ---
 ## Shortest Property Exploration Path
 
