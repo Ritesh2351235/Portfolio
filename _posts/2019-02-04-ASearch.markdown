@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Shortest Path Property Exploration"
-categories: [ Searching Graph  ]
+categories: [ Algorithm , Searching ,Graphs ,A*-Search,Priority Queue ]
 image: assets/images/Asearch.jpg
 ---
 ## Shortest Property Exploration Path
@@ -68,7 +68,7 @@ function A_Star(start, goal, h)
 
     return failure  // Open set is empty and goal was never reached
 ```
-## Here is the full code implementation
+## Here is the full code implementation [Code](https://github.com/Ritesh2351235/Portfolio/blob/master/assets/Codes/ASearch.cpp)
 
 
 
