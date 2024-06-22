@@ -24,3 +24,33 @@ To save memory space, we'll store both user_id and property_id using only 24 bit
 
 ### Implementation
 First, we'll define the data structure by creating hash tables that map users to properties and properties to users. Then, we'll implement functions to add ratings to these hash tables, ensuring that the data is stored compactly. Finally, we'll implement functions to retrieve ratings, calculate averages, and perform specific queries efficiently.
+
+### Algorithm
+```cpp
+function recommendProperties(uid, minRating) is
+    propertyScores := empty hash table
+    propertyCounts := empty hash table
+
+    for each data in userToProperties[uid] do
+        pid := data >> 8
+        rating := data & 0xFF
+
+        for each relatedData in propertyToUsers[pid] do
+            relatedUid := relatedData >> 8
+            relatedRating := relatedData & 0xFF
+
+            if relatedUid != uid and relatedRating >= minRating then
+                propertyScores[pid] += relatedRating
+                propertyCounts[pid]++
+
+    recommendations := empty list
+
+    for each entry in propertyScores do
+        if propertyCounts[entry.first] > 1 then
+            recommendations.push_back(entry.first)
+
+    return recommendations
+```
+
+The similar type of datastructure is used for netflix recommendation system.
+## Here is the full code implementation [Code](https://github.com/Ritesh2351235/Portfolio/blob/master/assets/Codes/Recommendation.cpp)
