@@ -16,7 +16,7 @@ To make property recommendations quickly, let's use in-memory storage. This mean
 
 We'll use two hash tables for fast data access. One hash table will be indexed by user_id (uid), making it easy to look up properties that a specific user has rated. The other hash table will be indexed by property_id (pid), allowing quick access to ratings for a specific property.
 
-![Database Schema](/assets/images/portfoliodatabase.png)
+![Database Schema]({{ site.baseurl }}/assets/images/portfoliodatabase.png)
 
 ### Memory Optimization
 To save memory space, we'll store both user_id and property_id using only 24 bits. By shifting the user_id or property_id to the upper 24 bits of an integer and storing the rating in the lower 8 bits, we can store and retrieve ratings efficiently using bitwise operations. Additionally, we'll maintain hash tables that keep track of the number of properties each user has rated and the sum of those ratings. Similarly, we'll have hash tables for the number of ratings each property has received and the sum of those ratings. This setup will help us quickly calculate average ratings and add new ratings efficiently.
