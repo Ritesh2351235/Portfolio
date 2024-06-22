@@ -16,7 +16,7 @@ To make property recommendations quickly, let's use in-memory storage. This mean
 
 We'll use two hash tables for fast data access. One hash table will be indexed by user_id (uid), making it easy to look up properties that a specific user has rated. The other hash table will be indexed by property_id (pid), allowing quick access to ratings for a specific property.
 
-<img src="./assets/images/portfoliodatabase.png" alt="Property Recommendation" style="width:100%; height:auto;">
+<img src="/assets/images/portfoliodatabase.png" alt="Property Recommendation" style="width:100%; height:auto;">
 
 
 ### Memory Optimization
