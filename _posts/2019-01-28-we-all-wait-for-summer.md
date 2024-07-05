@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "We all wait for summer"
+title:  "Optimal Renovation Investment on Zillow"
 author: jane
-categories: [ Jekyll, tutorial ]
+categories: [ BranchandBound ]
 image: assets/images/1.jpg
 tags: [featured]
 ---
@@ -38,12 +38,12 @@ The constraints are:
 ### 2. Calculate Upper Bound
 
 - **Upper Bound Calculation:** For each node in the tree, calculate an upper bound of the maximum possible value that can be obtained from that node.
-  - This helps in estimating the potential value of the node and deciding whether to continue exploring that branch.
+  This helps in estimating the potential value of the node and deciding whether to continue exploring that branch.
 
 ### 3. Removing Branches
 
 - **Excluding branch Criteria:** If the upper bound of a node is less than the current best value found, discard that branch.
-  - This avoids exploring branches that cannot yield a better solution than the best one found so far.
+   This avoids exploring branches that cannot yield a better solution than the best one found so far.
 
 ### 4. Track the Best Solution
 
