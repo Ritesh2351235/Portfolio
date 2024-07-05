@@ -1,16 +1,50 @@
 ---
 layout: post
-title:  "About Bundler"
+title:  "Optimal Renovation Investment on Zillow"
 author: sal
-categories: [ Jekyll ]
+categories: [ Branch and Bound ]
 image: assets/images/2.jpg
 ---
-`gem install bundler` installs the bundler gem through RubyGems. You only need to install it once - not every time you create a new Jekyll project. Here are some additional details:
+Investing in property renovations is a crucial strategy for increasing property value and maximizing return on investment (ROI). To determine the best renovation strategy, we need to evaluate various renovation options and their potential impacts on property value. Using Branch and Bound algorithm, we can break down this complex decision-making process into manageable steps, ensuring we make the most informed investment decisions. This approach allows us to consider multiple factors and choose the renovation strategy that yields the highest ROI, despite varying market conditions.
 
-`bundler` is a gem that manages other Ruby gems. It makes sure your gems and gem versions are compatible, and that you have all necessary dependencies each gem requires.
+## Branch and Bound Algorithm
+Branch and Bound algorithm is a method used to solve optimization problems. It systematically explores and prunes branches of a decision tree, where each branch represents a potential solution. By calculating an upper bound for each branch, it eliminates branches that cannot produce a better solution than the current best one, thus efficiently finding the optimal solution.
 
-The `Gemfile` and `Gemfile.lock` files inform `Bundler` about the gem requirements in your site. If your site doesn’t have these Gemfiles, you can omit `bundle exec` and just `run jekyll serve`.
+![Branch and bound]({{ site.baseurl }}/assets/images/Branchandbound.webp)
 
-When you run `bundle exec jekyll serve`, `Bundler` uses the gems and versions as specified in `Gemfile.lock` to ensure your Jekyll site builds with no compatibility or dependency conflicts.
+## Implementation
 
-For more information about how to use `Bundler` in your Jekyll project, this tutorial should provide answers to the most common questions and explain how to get up and running quickly.
+Each renovation option has:
+- A cost
+- A potential value increase
+- We can add more feilds into here.
+
+The constraints are:
+- The total cost of selected renovation options should not exceed the given budget.
+- Can add more constraints like bathrooms must be compulsary renovated. 
+
+**Objective:** Maximize the total value increase from the selected renovation options.
+
+## Steps
+
+### 1. Create a State Space Tree
+
+- **Nodes:** Each node represents a decision to include or exclude a renovation option.
+- **Branching:** For each node, there are two possible branches:
+  - Include the renovation option.
+  - Exclude the renovation option.
+
+### 2. Calculate Upper Bound
+
+- **Upper Bound Calculation:** For each node in the tree, calculate an upper bound of the maximum possible value that can be obtained from that node.
+  - This helps in estimating the potential value of the node and deciding whether to continue exploring that branch.
+
+### 3. Removing Branches
+
+- **Excluding branch Criteria:** If the upper bound of a node is less than the current best value found, discard that branch.
+  - This avoids exploring branches that cannot yield a better solution than the best one found so far.
+
+### 4. Track the Best Solution
+
+- **Tracking:** Keep track of the best solution found during the exploration of the state space tree.
+
