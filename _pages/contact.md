@@ -3,16 +3,53 @@ title: "Contact"
 permalink: "/contact.html"
 ---
 
-<form action="https://formspree.io/{{site.email}}" method="POST">    
-<p class="mb-4">Please send your message to {{site.name}}. We will reply as soon as possible!</p>
-<div class="form-group row">
-<div class="col-md-6">
-<input class="form-control" type="text" name="name" placeholder="Name*" required>
-</div>
-<div class="col-md-6">
-<input class="form-control" type="email" name="_replyto" placeholder="E-mail Address*" required>
-</div>
-</div>
-<textarea rows="8" class="form-control mb-3" name="message" placeholder="Message*" required></textarea>    
-<input class="btn btn-success" type="submit" value="Send">
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .content {
+            flex: 1;
+        }
+        .image {
+            margin-left: 20px;
+        }
+        .image img {
+            max-width: 200px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>About Me</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eleifend, tortor vel auctor suscipit, urna libero aliquet purus, at vulputate leo erat ac libero. Nulla facilisi. Duis suscipit nisl in ante consectetur, nec laoreet mi vulputate.
+            </p>
+        </div>
+        <div class="image">
+            <img src="assets\images\Profilepic.png" alt="Your Photo">
+        </div>
+    </div>
+</body>
+</html>
