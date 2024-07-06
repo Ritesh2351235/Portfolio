@@ -49,4 +49,4 @@ The constraints are:
 
 - **Tracking:** Keep track of the best solution found during the exploration of the state space tree.
 
-## Here is the full code implementation [Code](https://github.com/Ritesh2351235/Portfolio/blob/master/assets/Codes/Zestimate.cpp)
+## Here is the full code implementation [Code](https://gist.github.com/JPenuchot/1c13e66583154403dc0e4e08931cbcf8)

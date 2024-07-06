@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Red Riding Hood"
+title:  "Efficient Property Search using SkipList"
 author: sal
 categories: [ Jekyll, tutorial ]
 image: assets/images/3.jpg
