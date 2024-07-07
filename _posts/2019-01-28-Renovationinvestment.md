@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Optimal Renovation Investment on Zillow"
-author: jane
 categories: [ BranchandBound ]
 image: assets/images/1.jpg
 tags: [featured]

@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "Zillow's Ad Placement Algorithm for maximizing revenue"
-author: sal
-categories: [ tutorial ]
+categories: [ Dynamic Programming ]
 image: assets/images/AdDP.jpg
 tags: [featured]
 ---

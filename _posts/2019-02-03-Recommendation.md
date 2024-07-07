@@ -1,14 +1,11 @@
 ---
 layout: post
 title:  "Property Recommendation System by Zillow"
-author: jane
 categories: [ Hash-Maps,DataStructure ]
 image: assets/images/Recommendation.jpg
 tags: []
 ---
 
-
-## Efficient Data Access for Personalized Property Recommendations on Zillow
 Zillow's property recommendation is a popular feature. It suggests properties to users based on their previous data and interactions. To make this work efficiently, we need to access the data quickly. By using a strong data structure and smart algorithms, we can offer personalized property suggestions that match user preferences. This approach improves user experience, making the platform more engaging and helpful for finding the perfect home.
 
 ### Data Storage Strategy

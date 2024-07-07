@@ -1,13 +1,10 @@
 ---
 layout: post
-title:  "Zestimate"
-author: jane
+title:  "Zestimate- A Property Valuation Tool"
 categories: [DataStructure,Algorithms,B-Trees,Quad-Trees ]
 image: assets/images/Zestimate.jpg
 tags: []
 ---
-
-# Zestimate- A Property Valuation Tool
 
 Zestimate (Zillow's estimate) is a calculated value that represents an estimated market price for a home. This estimate is generated using a variety of data points, including:
 

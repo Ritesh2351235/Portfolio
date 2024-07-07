@@ -4,8 +4,6 @@ title:  "Shortest Path Property Exploration"
 categories: [ Algorithm , Searching ,Graphs ,A*-Search,Priority Queue ]
 image: assets/images/Asearch.jpg
 ---
-## Shortest Property Exploration Path
-
 A real estate agent needs to plan a route for a customer who wants to visit multiple properties in a city. The goal is to find the shortest path that allows the customer to visit all desired properties efficiently. This means the agent should find a route that minimizes travel time and distance. By doing this, the agent can save time and reduce travel costs, making the property viewing experience smooth and enjoyable for the customer. A well-planned route ensures that the customer can see all the properties they are interested in without unnecessary delays and save a lot of their time.
 
 ### Using the A* Search Algorithm

@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "Property Image Compression using Huffman Coding for efficient Storage and retrival"
-author: jane
-categories: [ Jekyll, tutorial ]
+categories: [ Huffman Coding , Algorithm ]
 image: assets/images/6.jpg
 ---
 

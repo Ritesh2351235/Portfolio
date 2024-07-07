@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Efficient Handling of Property Tax Assessments using Red-Black Trees"
-categories: [ Jekyll ]
+categories: [ Red Black Tree , Datastructure ]
 image: assets/images/7.jpg
 tags: featured
 ---

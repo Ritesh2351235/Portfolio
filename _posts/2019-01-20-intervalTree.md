@@ -1,9 +1,8 @@
 ---
 layout: post
 title:  "Efficient Property Reservation System with Interval Tree"
-author: sal
-categories: [ Jekyll, tutorial ]
-image: assets/images/12.jpg
+categories: [ Interval Tree ]
+image: assets/images/8.jpg
 ---
 Zillow aims to optimize the property reservation system to prevent double-booking and ensure that users can easily find available properties within their desired time frames. By implementing an Interval Tree, Zillow can efficiently manage and query overlapping time intervals, providing a robust solution for managing property availability.
 
