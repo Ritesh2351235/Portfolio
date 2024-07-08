@@ -29,4 +29,9 @@ This technique is used to defer updates to segments until necessary, which optim
 - **Update a Range :**  Write a function to update a range of elements.
 - Write a function to query the sum of a range of elements.
 
+
+### Time and Space Complexity
+ - **Time Complexity:** `O(logN)` for minimum range query.
+- **Space Complexity:** `O(N)` 
+
 ## Here is the full code implementation [Code](https://github.com/Ritesh2351235/Portfolio/blob/master/assets/Codes/SegmentTrees.cpp)

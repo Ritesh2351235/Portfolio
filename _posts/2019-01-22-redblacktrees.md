@@ -27,4 +27,8 @@ Here is an algorithm for insertion into red-black tree
 
 ![Algorithm ]({{ site.baseurl }}/assets/images/redblacktree.gif)
 
+### Time and Space Complexity 
+- **Time Complexity:** `O(log N)` (Worst case) `O(1)`(Average case)
+- **Space Complexity:** `O(1)` 
+
 ## Here is the full code implementation [Code](https://github.com/anandarao/Red-Black-Tree/blob/master/RBTree.cpp)

@@ -49,4 +49,9 @@ function optimizeAdPlacement(ads, placements):
 The above dynamic problem approach resembles the knapsack 0/1 problem which also concentrates on maximizing the profit while having capacity constraints.
 In the knapsack problem, items have weights and values, and the goal is to maximize the total value without exceeding a weight limit. Similarly, in the revenue maximization problem, ads have revenues associated with specific placements, and the challenge is to maximize revenue within the constraints of available ad slots.
 
+### Time and Space Complexity
+ - **Time Complexity:** `O(N*logN)` N:number of ads(items)
+  - **Space Complexity:** `O(N)` 
+
+
 ## Here is the full code implementation [Code](https://github.com/Ritesh2351235/Portfolio/blob/master/assets/Codes/Knapsack.cpp)

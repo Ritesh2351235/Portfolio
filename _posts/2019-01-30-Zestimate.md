@@ -40,4 +40,12 @@ Combining both Quad-trees for spatial data and B-trees for other attributes ensu
 5. **Filter by Attributes**: Use the B-tree to narrow down the properties based on criteria like price range.
 6. **Combine Results**: Retrieve the final list of properties matching both location and attribute criteria for the price estimate.
 
+
+### Time and Space Complexity for B Trees
+- **Time Complexity:** `O(logN)` 
+- **Space Complexity:** `O(N)` 
+
+### Time and Space Complexity for B Trees
+- **Time Complexity:** `O(logN)` 
+- **Space Complexity:** `O(klogN)` 
 ## Here is the full code implementation [Code](https://github.com/Ritesh2351235/Portfolio/blob/master/assets/Codes/Zestimate.cpp)

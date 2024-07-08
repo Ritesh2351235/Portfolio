@@ -47,6 +47,14 @@ function recommendProperties(uid, minRating) is
 
     return recommendations
 ```
+### Time and Space Complexity
+#### Best Case
+  - **Time Complexity:** `O(1)`
+  - **Space Complexity:** `O(1)` per call, growing with the number of ratings
+
+#### Worst Case
+ - **Time Complexity:** `O(N * M)` N:properties M: Users
+  - **Space Complexity:** `O(P)` P:unique properties
 
 The similar type of datastructure is used for netflix recommendation system.
 ## Here is the full code implementation [Code](https://github.com/Ritesh2351235/Portfolio/blob/master/assets/Codes/Recommendation.cpp)

@@ -48,4 +48,9 @@ The constraints are:
 
 - **Tracking:** Keep track of the best solution found during the exploration of the state space tree.
 
+
+### Time and Space Complexity.
+- **Time Complexity:** `O(b*d)` b: branching factor d:depth
+- **Space Complexity:** `O(b*d)` 
+
 ## Here is the full code implementation [Code](https://gist.github.com/JPenuchot/1c13e66583154403dc0e4e08931cbcf8)

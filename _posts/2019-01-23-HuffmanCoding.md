@@ -37,6 +37,11 @@ By analyzing the frequency of pixel values in property images, Huffman Coding cr
 
 ![Algorithm ]({{ site.baseurl }}/assets/images/Huffmann.png)
 
+
+### Time and Space Complexity 
+- **Time Complexity:** `O(N log N)` N: number of unique pixels for image compression.
+- **Space Complexity:** `O(N)` 
+
 ## Here is the Full code for image compression using huffman Coding for efficient image storage [Code](https://github.com/sudhamshu091/Huffman-Encoding-Decoding-For-Image-Compression/blob/main/huffman.py)
 
 ## For the full information on image compression using Huffman Coding refer the following paper [Paper](https://www.academia.edu/35330074/Compression_Using_Huffman_Coding_on_Digital_Image_for_LSB_Steganography)

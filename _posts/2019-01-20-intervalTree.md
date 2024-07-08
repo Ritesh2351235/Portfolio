@@ -26,7 +26,9 @@ Zillow aims to optimize the property reservation system to prevent double-bookin
 
    - Create a function to delete reservations from the Interval Tree. This function should also handle rebalancing and update the maximum end time values in the affected subtrees.
 
-
+### Time and Space Complexity 
+- **Time Complexity:** `O(N log N)` 
+- **Space Complexity:** `O(N)` 
 
 ## Here is the full code implementation [Code](https://github.com/tinloaf/ygg/blob/master/src/intervaltree.cpp)
 

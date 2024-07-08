@@ -66,6 +66,17 @@ function A_Star(start, goal, h)
 
     return failure  // Open set is empty and goal was never reached
 ```
+
+
+### Time Complexity
+**Best-case Time Complexity:** When the heuristic is perfect,the time complexity can approach `O(d)`.(Straigth line distance)
+**Average-case and Worst Time Complexity:** `O(b^d)`, where b represents branching factor
+
+
+### Space Complexity
+**Best-case space Complexity:** Similar to time complexity `O(d)`.
+**Average-case and Worst space Complexity:** `O(b^d)`, where b represents branching factor
+
 ## Here is the full code implementation [Code](https://github.com/Ritesh2351235/Portfolio/blob/master/assets/Codes/ASearch.cpp)
 
 
